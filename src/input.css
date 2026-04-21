@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+@layer components {
+  .btn-primary {
+    @apply bg-cyan-300 text-black px-4 py-2 rounded-base;
+  }
+  .btn-primary:hover {
+    @apply bg-cyan-400;
+  }
+  .btn-primary:active {
+    @apply bg-cyan-500;
+  }
+  .btn-primary:disabled {
+    @apply bg-cyan-200;
+  }
+  .btn-primary:focus {
+    @apply outline-none;
+  }
+}
